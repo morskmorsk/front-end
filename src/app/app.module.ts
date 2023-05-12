@@ -18,6 +18,14 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { SettingsComponent } from './settings/settings.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { StoreComponent } from './store/store.component';
+import { WorkordersComponent } from './workorders/workorders.component';
+import { CartComponent } from './cart/cart.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { CustomersComponent } from './customers/customers.component';
+import { ProductsComponent } from './products/products.component';
+import { OrdersComponent } from './orders/orders.component';
+import { ReportsComponent } from './reports/reports.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +36,14 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     ContactComponent,
     SettingsComponent,
     SidebarComponent,
+    StoreComponent,
+    WorkordersComponent,
+    CartComponent,
+    DashboardComponent,
+    CustomersComponent,
+    ProductsComponent,
+    OrdersComponent,
+    ReportsComponent,
   ],
   imports: [
     BrowserModule,
