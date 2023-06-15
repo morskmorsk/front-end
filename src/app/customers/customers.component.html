@@ -1,1 +1,11 @@
-<p>customers works!</p>
+<!-- in your template -->
+<div class="customer-list">
+    <div class="customer-header">
+        <div class="customer-header-item">Username</div>
+        <div class="customer-header-item">ID</div>
+    </div>
+    <div class="customer-item" *ngFor="let customer of customers">
+        <div class="customer-item-username">{{ customer.username }}</div>
+        <div class="customer-item-id">{{ customer.id }}</div>
+    </div>
+</div>

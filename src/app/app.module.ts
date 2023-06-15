@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http'; // <-- import this
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { AuthService } from './core/auth.service';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -62,9 +65,13 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
     MatMenuModule,
     MatSidenavModule,
     MatListModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule, // <-- add this
+
   ],
-  providers: [],
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: AuthService, multi: true },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

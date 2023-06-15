@@ -1,0 +1,25 @@
+.customer-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .customer-header,
+  .customer-item {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .customer-header {
+    font-weight: bold;
+  }
+  
+  .customer-item-username,
+  .customer-item-id {
+    flex-basis: 50%;
+  }
+  
