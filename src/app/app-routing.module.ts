@@ -2,9 +2,10 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
-import { ContactComponent } from './contact/contact.component';
-import { SettingsComponent } from './settings/settings.component';
+// import { AboutComponent } from './about/about.component';
+// import { ContactComponent } from './contact/contact.component';
+// import { SettingsComponent } from './settings/settings.component';
+import { LogoutComponent } from './logout/logout.component';
 import { StoreComponent } from './store/store.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
@@ -19,9 +20,9 @@ import { WorkordersComponent } from './workorders/workorders.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'about', component: AboutComponent, data: { title: 'About' } },
-  { path: 'contact', component: ContactComponent, data: { title: 'Contact' } },
-  { path: 'settings', component: SettingsComponent, data: { title: 'Settings' } },
+  { path: 'logout', component: LogoutComponent, data: { title: 'Logout' } },
+  // { path: 'contact', component: ContactComponent, data: { title: 'Contact' } },
+  // { path: 'settings', component: SettingsComponent, data: { title: 'Settings' } },
   { path: 'store', component: StoreComponent, data: { title: 'Store' } },
   { path: 'dashboard', component: DashboardComponent, data: { title: 'Dashboard' } },
   { path: 'login', component: LoginComponent, data: { title: 'Login' } },

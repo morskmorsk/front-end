@@ -33,6 +33,7 @@ import { ReportsComponent } from './reports/reports.component';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { LogoutComponent } from './logout/logout.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +55,7 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
     LoginComponent,
     ProfileComponent,
     ProductDetailComponent,
+    LogoutComponent,
   ],
   imports: [
     BrowserModule,
